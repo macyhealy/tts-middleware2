@@ -28,7 +28,7 @@ app.post("/tts", async (req, res) => {
 
     const text = (req.body.text || "").trim();
     const voice = req.body.voice || "marin";
-    const tone = (req.body.tone || "Speak in a warm, calm, friendly tone.").trim();
+    const tone = (req.body.tone || "").trim();
     const format = (req.body.format || "mp3").toLowerCase();
     const speed = Number(req.body.speed || 1);
 
